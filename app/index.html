@@ -18,7 +18,8 @@
     {{content-for "body"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/ember-lower-js.js"></script>
+    <script nomodule src="{{rootURL}}assets/ember-lower-js.js"></script>
+    <script type="module" src="{{rootURL}}assets/ember-lower-js.js" data-modern-script></script>
 
     {{content-for "body-footer"}}
   </body>
